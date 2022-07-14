@@ -2,9 +2,9 @@ import axios from "axios";
 
 axios.defaults.baseURL = 'http://localhost:5000';
 
-export function postUpload (file) {
+export function postUpload (url,file) {
     return axios({
-        url: 'upload',
+        url: url,
         method: 'post',
         data: file,
         headers: {
