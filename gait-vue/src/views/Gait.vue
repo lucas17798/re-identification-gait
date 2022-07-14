@@ -20,7 +20,7 @@
     </el-col>
     <el-col :span="1"></el-col>
     <el-col :span="2">
-      <el-button class="button" type="primary">上传视频进行步态分析</el-button>
+      <el-button class="button" type="primary" @click="getFile">上传视频进行步态分析</el-button>
     </el-col>
     <input type="file" ref="addFile" style="display: none;" v-on:change="addInformationUpload($event)">
   </el-row>
